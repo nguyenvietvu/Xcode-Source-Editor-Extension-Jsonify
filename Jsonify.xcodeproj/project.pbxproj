@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6160CD027D08113001EA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6160CCF27D08113001EA8E8 /* AppDelegate.swift */; };
+		F671A44A27CDDB45007B3C95 /* FormatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A44927CDDB45007B3C95 /* FormatError.swift */; };
+		F671A44C27CE7F6D007B3C95 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A44B27CE7F6D007B3C95 /* RadioButton.swift */; };
+		F671A44E27CE8155007B3C95 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A44D27CE8155007B3C95 /* UserDefaults.swift */; };
+		F671A44F27CE82EA007B3C95 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A44D27CE8155007B3C95 /* UserDefaults.swift */; };
+		F671A45327CE8A6B007B3C95 /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A45227CE8A6B007B3C95 /* C.swift */; };
+		F671A45427CE8A85007B3C95 /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671A45227CE8A6B007B3C95 /* C.swift */; };
+		F67DEF7227CA97B400A6A140 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ECD98E27CA8EC600C5C5AF /* XcodeKit.framework */; };
+		F67DEF7327CA97B400A6A140 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6ECD98E27CA8EC600C5C5AF /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F67DEF7627CA99DE00A6A140 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DEF7527CA99DE00A6A140 /* String.swift */; };
+		F6ECD97727CA8E9000C5C5AF /* JsonifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ECD97627CA8E9000C5C5AF /* JsonifyApp.swift */; };
+		F6ECD97927CA8E9000C5C5AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ECD97827CA8E9000C5C5AF /* ContentView.swift */; };
+		F6ECD97B27CA8E9000C5C5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ECD97A27CA8E9000C5C5AF /* Assets.xcassets */; };
+		F6ECD97E27CA8E9000C5C5AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ECD97D27CA8E9000C5C5AF /* Preview Assets.xcassets */; };
+		F6ECD98D27CA8EC600C5C5AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ECD98C27CA8EC600C5C5AF /* Cocoa.framework */; };
+		F6ECD99227CA8EC600C5C5AF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ECD99127CA8EC600C5C5AF /* SourceEditorExtension.swift */; };
+		F6ECD99427CA8EC600C5C5AF /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ECD99327CA8EC600C5C5AF /* SourceEditorCommand.swift */; };
+		F6ECD99927CA8EC600C5C5AF /* Parser.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6ECD98A27CA8EC600C5C5AF /* Parser.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6ECD99727CA8EC600C5C5AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6ECD96B27CA8E9000C5C5AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6ECD98927CA8EC600C5C5AF;
+			remoteInfo = Parser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F67DEF7427CA97B400A6A140 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F67DEF7327CA97B400A6A140 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ECD99D27CA8EC600C5C5AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6ECD99927CA8EC600C5C5AF /* Parser.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6160CCF27D08113001EA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F671A44927CDDB45007B3C95 /* FormatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatError.swift; sourceTree = "<group>"; };
+		F671A44B27CE7F6D007B3C95 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		F671A44D27CE8155007B3C95 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		F671A45227CE8A6B007B3C95 /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
+		F67DEF7527CA99DE00A6A140 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F6ECD97327CA8E9000C5C5AF /* Jsonify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jsonify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6ECD97627CA8E9000C5C5AF /* JsonifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonifyApp.swift; sourceTree = "<group>"; };
+		F6ECD97827CA8E9000C5C5AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6ECD97A27CA8E9000C5C5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6ECD97D27CA8E9000C5C5AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6ECD97F27CA8E9100C5C5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6ECD98027CA8E9100C5C5AF /* Jsonify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jsonify.entitlements; sourceTree = "<group>"; };
+		F6ECD98A27CA8EC600C5C5AF /* Parser.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Parser.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6ECD98C27CA8EC600C5C5AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6ECD98E27CA8EC600C5C5AF /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6ECD99127CA8EC600C5C5AF /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		F6ECD99327CA8EC600C5C5AF /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		F6ECD99527CA8EC600C5C5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6ECD99627CA8EC600C5C5AF /* Parser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Parser.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6ECD97027CA8E9000C5C5AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ECD98727CA8EC600C5C5AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ECD98D27CA8EC600C5C5AF /* Cocoa.framework in Frameworks */,
+				F67DEF7227CA97B400A6A140 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6ECD96A27CA8E9000C5C5AF = {
+			isa = PBXGroup;
+			children = (
+				F6ECD97527CA8E9000C5C5AF /* Jsonify */,
+				F6ECD99027CA8EC600C5C5AF /* Parser */,
+				F6ECD98B27CA8EC600C5C5AF /* Frameworks */,
+				F6ECD97427CA8E9000C5C5AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6ECD97427CA8E9000C5C5AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6ECD97327CA8E9000C5C5AF /* Jsonify.app */,
+				F6ECD98A27CA8EC600C5C5AF /* Parser.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6ECD97527CA8E9000C5C5AF /* Jsonify */ = {
+			isa = PBXGroup;
+			children = (
+				F6ECD97627CA8E9000C5C5AF /* JsonifyApp.swift */,
+				F6ECD97827CA8E9000C5C5AF /* ContentView.swift */,
+				F671A44D27CE8155007B3C95 /* UserDefaults.swift */,
+				F671A44B27CE7F6D007B3C95 /* RadioButton.swift */,
+				F6ECD97A27CA8E9000C5C5AF /* Assets.xcassets */,
+				F6ECD97F27CA8E9100C5C5AF /* Info.plist */,
+				F6ECD98027CA8E9100C5C5AF /* Jsonify.entitlements */,
+				F6ECD97C27CA8E9000C5C5AF /* Preview Content */,
+				F671A45227CE8A6B007B3C95 /* C.swift */,
+				F6160CCF27D08113001EA8E8 /* AppDelegate.swift */,
+			);
+			path = Jsonify;
+			sourceTree = "<group>";
+		};
+		F6ECD97C27CA8E9000C5C5AF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6ECD97D27CA8E9000C5C5AF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6ECD98B27CA8EC600C5C5AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6ECD98C27CA8EC600C5C5AF /* Cocoa.framework */,
+				F6ECD98E27CA8EC600C5C5AF /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6ECD99027CA8EC600C5C5AF /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				F6ECD99127CA8EC600C5C5AF /* SourceEditorExtension.swift */,
+				F6ECD99327CA8EC600C5C5AF /* SourceEditorCommand.swift */,
+				F6ECD99527CA8EC600C5C5AF /* Info.plist */,
+				F6ECD99627CA8EC600C5C5AF /* Parser.entitlements */,
+				F67DEF7527CA99DE00A6A140 /* String.swift */,
+				F671A44927CDDB45007B3C95 /* FormatError.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6ECD97227CA8E9000C5C5AF /* Jsonify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6ECD98327CA8E9100C5C5AF /* Build configuration list for PBXNativeTarget "Jsonify" */;
+			buildPhases = (
+				F6ECD96F27CA8E9000C5C5AF /* Sources */,
+				F6ECD97027CA8E9000C5C5AF /* Frameworks */,
+				F6ECD97127CA8E9000C5C5AF /* Resources */,
+				F6ECD99D27CA8EC600C5C5AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6ECD99827CA8EC600C5C5AF /* PBXTargetDependency */,
+			);
+			name = Jsonify;
+			productName = Jsonity;
+			productReference = F6ECD97327CA8E9000C5C5AF /* Jsonify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6ECD98927CA8EC600C5C5AF /* Parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6ECD99A27CA8EC600C5C5AF /* Build configuration list for PBXNativeTarget "Parser" */;
+			buildPhases = (
+				F6ECD98627CA8EC600C5C5AF /* Sources */,
+				F6ECD98727CA8EC600C5C5AF /* Frameworks */,
+				F6ECD98827CA8EC600C5C5AF /* Resources */,
+				F67DEF7427CA97B400A6A140 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parser;
+			productName = Parser;
+			productReference = F6ECD98A27CA8EC600C5C5AF /* Parser.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6ECD96B27CA8E9000C5C5AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F6ECD97227CA8E9000C5C5AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F6ECD98927CA8EC600C5C5AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F6ECD96E27CA8E9000C5C5AF /* Build configuration list for PBXProject "Jsonify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6ECD96A27CA8E9000C5C5AF;
+			productRefGroup = F6ECD97427CA8E9000C5C5AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6ECD97227CA8E9000C5C5AF /* Jsonify */,
+				F6ECD98927CA8EC600C5C5AF /* Parser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6ECD97127CA8E9000C5C5AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ECD97E27CA8E9000C5C5AF /* Preview Assets.xcassets in Resources */,
+				F6ECD97B27CA8E9000C5C5AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ECD98827CA8EC600C5C5AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6ECD96F27CA8E9000C5C5AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6160CD027D08113001EA8E8 /* AppDelegate.swift in Sources */,
+				F671A44E27CE8155007B3C95 /* UserDefaults.swift in Sources */,
+				F671A44C27CE7F6D007B3C95 /* RadioButton.swift in Sources */,
+				F6ECD97927CA8E9000C5C5AF /* ContentView.swift in Sources */,
+				F671A45327CE8A6B007B3C95 /* C.swift in Sources */,
+				F6ECD97727CA8E9000C5C5AF /* JsonifyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ECD98627CA8EC600C5C5AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ECD99227CA8EC600C5C5AF /* SourceEditorExtension.swift in Sources */,
+				F671A44F27CE82EA007B3C95 /* UserDefaults.swift in Sources */,
+				F67DEF7627CA99DE00A6A140 /* String.swift in Sources */,
+				F6ECD99427CA8EC600C5C5AF /* SourceEditorCommand.swift in Sources */,
+				F671A45427CE8A85007B3C95 /* C.swift in Sources */,
+				F671A44A27CDDB45007B3C95 /* FormatError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6ECD99827CA8EC600C5C5AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6ECD98927CA8EC600C5C5AF /* Parser */;
+			targetProxy = F6ECD99727CA8EC600C5C5AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F6ECD98127CA8E9100C5C5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6ECD98227CA8E9100C5C5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F6ECD98427CA8E9100C5C5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jsonify/Jsonify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Jsonify/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MGYD8PXZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Jsonify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgp.Jsonify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F6ECD98527CA8E9100C5C5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jsonify/Jsonify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Jsonify/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MGYD8PXZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Jsonify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgp.Jsonify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F6ECD99B27CA8EC600C5C5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Parser/Parser.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6MGYD8PXZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Parser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgp.Jsonify.Parser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F6ECD99C27CA8EC600C5C5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Parser/Parser.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6MGYD8PXZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Parser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgp.Jsonify.Parser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6ECD96E27CA8E9000C5C5AF /* Build configuration list for PBXProject "Jsonify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6ECD98127CA8E9100C5C5AF /* Debug */,
+				F6ECD98227CA8E9100C5C5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6ECD98327CA8E9100C5C5AF /* Build configuration list for PBXNativeTarget "Jsonify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6ECD98427CA8E9100C5C5AF /* Debug */,
+				F6ECD98527CA8E9100C5C5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6ECD99A27CA8EC600C5C5AF /* Build configuration list for PBXNativeTarget "Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6ECD99B27CA8EC600C5C5AF /* Debug */,
+				F6ECD99C27CA8EC600C5C5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6ECD96B27CA8E9000C5C5AF /* Project object */;
+}
